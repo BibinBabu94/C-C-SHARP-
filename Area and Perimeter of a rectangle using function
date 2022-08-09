@@ -1,0 +1,47 @@
+using System; 
+namespace Rectangle 
+{ 
+class Perimeter 
+{ 
+  string input; 
+   double length,width,r; 
+   public void read() 
+   { 
+       Console.WriteLine("enter length"); 
+       input= Console.ReadLine(); 
+       length=Convert.ToDouble(input); 
+      // length = 2.5; 
+       width = 4.3; 
+        
+        
+   } 
+   public double peri(double p) 
+   { 
+       p=(2*(length+width)); 
+       return p; 
+       } 
+   public double area() 
+   { 
+       return (length*width); 
+   } 
+       public void result() 
+       { 
+
+           Console.WriteLine("length: {0}", length); 
+           Console.WriteLine("width: {0}", width); 
+           Console.WriteLine("perimeter: {0}", peri(r)); 
+           Console.WriteLine("area: {0}", area()); 
+       } 
+} 
+class excecution 
+{ 
+   public static void Main(string[] args) 
+   { 
+       Perimeter x= new Perimeter(); 
+       x.read(); 
+       x.result(); 
+       Console.ReadLine(); 
+   } 
+} 
+} 
+
